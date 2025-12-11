@@ -23,7 +23,6 @@ import zustandlogo from "./assets/tech_logo/zustand.svg";
 import reduxlogo from "./assets/tech_logo/redux.svg";
 import clerklogo from "./assets/tech_logo/clerk.svg";
 import arcjet from "./assets/tech_logo/arcjet.svg";
-import inngest from "./assets/tech_logo/inngest.jpeg";
 import socketio from "./assets/tech_logo/socketio.svg";
 import sqllogo from "./assets/tech_logo/sql.svg";
 import mysqllogo from "./assets/tech_logo/mysqllogo.svg";
@@ -34,6 +33,11 @@ import cloudinarylogo from "./assets/tech_logo/cloudinary.svg";
 import imagekit from "./assets/tech_logo/imagekit.svg";
 import sevalla from "./assets/tech_logo/sevalla.jpeg";
 import render from "./assets/tech_logo/render.png";
+import pythonLogo from "./assets/tech_logo/python-logo.svg";
+import graphqlLogo from "./assets/tech_logo/graphql.png";
+import restapilogo from "./assets/tech_logo/restapi.svg";
+import sqlitelogo from "./assets/tech_logo/sqlite.svg";
+import webrtclogo from "./assets/tech_logo/webrtc.png";
 
 // Experience Section Logo's
 import etechlogo from "./assets/company_logo/etechlogo.jpeg";
@@ -47,6 +51,7 @@ import sflogo from "./assets/education_logo/sflogo.webp";
 import dinedashlogo from "./assets/work_logo/DineDash.png";
 import trellologo from "./assets/work_logo/trelloclone.png";
 import chatifylogo from "./assets/work_logo/chatify.png";
+import gourmetlogo from "./assets/work_logo/gourmet.png";
 
 export const SkillsInfo = [
   {
@@ -54,7 +59,7 @@ export const SkillsInfo = [
     skills: [
       { name: "HTML", logo: htmlLogo },
       { name: "CSS", logo: cssLogo },
-      { name: "SASS", logo: sassLogo },
+      { name: "SaSS", logo: sassLogo },
       { name: "React JS", logo: reactjsLogo },
       { name: "Next JS", logo: nextjsLogo },
       { name: "Tailwind CSS", logo: tailwindcssLogo },
@@ -70,12 +75,11 @@ export const SkillsInfo = [
     skills: [
       { name: "Node JS", logo: nodejsLogo },
       { name: "Express JS", logo: expressjsLogo },
-
       { name: "Supabase", logo: supabaseLogo },
       { name: "Clerk", logo: clerklogo },
       { name: "Arcjet", logo: arcjet },
-
-      { name: "SocketIo", logo: socketio },
+      { name: "GraphQL", logo: graphqlLogo },
+      { name: "RestAPI", logo: restapilogo },
     ],
   },
   {
@@ -84,6 +88,7 @@ export const SkillsInfo = [
       { name: "JavaScript", logo: javascriptLogo },
       { name: "TypeScript", logo: typescriptLogo },
       { name: "SQL", logo: sqllogo },
+      { name: "Python", logo: pythonLogo },
     ],
   },
   {
@@ -95,6 +100,14 @@ export const SkillsInfo = [
       { name: "Mongoose", logo: mongooselogo },
       { name: "Prisma", logo: prismalogo },
       { name: "NeonDB", logo: neondb },
+      { name: "SQLite", logo: sqlitelogo },
+    ],
+  },
+  {
+    title: "RealTime Technologies",
+    skills: [
+      { name: "Socket.Io", logo: socketio },
+      { name: "WebRTC", logo: webrtclogo },
     ],
   },
   {
@@ -105,7 +118,7 @@ export const SkillsInfo = [
       { name: "Netlify", logo: netlifyLogo },
       { name: "Cloudinary", logo: cloudinarylogo },
       { name: "ImageKit", logo: imagekit },
-      { name: "Inngest", logo: inngest },
+      { name: "Github", logo: githubLogo },
       { name: "Sevalla", logo: sevalla },
       { name: "Render", logo: render },
     ],
@@ -118,7 +131,7 @@ export const experiences = [
     img: freelancelogo,
     role: "Fullstack Developer",
     company: "Self Employed",
-    date: "October 2022 - Present",
+    date: "Jan 2025 - Present",
     desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development.  Build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment. The most significant impact Is I developed a billing software in Nextjs for a spare parts bussiness for handling transactions and filter them through dates with an responsive ui.",
     skills: [
       "HTML",
@@ -136,9 +149,9 @@ export const experiences = [
   {
     id: 1,
     img: etechlogo,
-    role: "Web Developer Internship",
+    role: "Web Developer Intern",
     company: "E-tech",
-    date: "July 2024 -  August 2024",
+    date: "July 2024 -  Dec 2024",
     desc: "Web developer internship at Etech , where i had amazing mentors that guide me on implementing theory concepts to practical projects . I learned react in dept along with several packages in the react library and how to use them , which then helped me to create responsive and catchy Uis.",
     skills: [
       "ReactJS",
@@ -157,7 +170,7 @@ export const education = [
     id: 0,
     img: choukseylogo,
     school: "Chouksey Engineering College, Bilaspur",
-    date: "October 2021 - June 2025",
+    date: "October 2021 - October 2025",
     grade: "82.2%",
     desc: "I completed my Bachelor's of technology degree in Computer Science (B.Tech.) from Chouksey Engineering College, Bilaspur. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at Chouksey Engineering College allowed me to work on projects that applied theoretical concepts to real-world problems.",
     degree: "Bachelor of Technology - B.Tech (Computer Science)",
@@ -185,6 +198,16 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Trello-Clone",
+    description:
+      "A fullstack professional clone of Trello- A task and life management tool. TrelloClone helps teams move work forward. Collaborate, manage projects, and reach new productivity peaks. From high rises to the home office.Equipped with enterprise level authentication using Clerk , created on Nextjs and typescript with a complex drag and drop functionality to manage tasks.",
+    image: trellologo,
+    tags: ["NextJs", "Supabase", "Clerk", "Typescript"],
+    github: "https://github.com/ayushtiwari77/Trello-clone.git",
+    webapp: "https://trello-clone-omega-orcin.vercel.app/",
+  },
+  {
+    id: 1,
     title: "Dine Dash - Online Food & Delivery Platform",
     description:
       "An online food & delivery fullstack application with email verification and high level authentication. DineDash is equipped with completely responsive ui with dark and light mode functionality.Dine Dash provides user an interface to order dishes , as well as a admin panel for restaurant owners. DineDash uses mongodb for storage, Typescript for robust code , zod for form validation, along with various tools such as Cloudinary , mailtrap , stripe webhooks and Zustand for state management.Dine Dash is a completely scalable platform developed to scale efficiently",
@@ -193,16 +216,7 @@ export const projects = [
     github: "https://github.com/ayushtiwari77/Dine-Dash-Official",
     webapp: "https://dinedashofficial.netlify.app/",
   },
-  {
-    id: 1,
-    title: "Trello-Clone",
-    description:
-      "A fullstack professional clone of Trello- A task and life management tool. TrelloClone helps teams move work forward. Collaborate, manage projects, and reach new productivity peaks. From high rises to the home office.Equipped with enterprise level authentication using Clerk , created on Nextjs and typescript with a complex drag and drop functionality to manage tasks.",
-    image: trellologo,
-    tags: ["NextJs", "Supabase", "Clerk", "Typescript"],
-    github: "https://github.com/ayushtiwari77/Trello-clone.git",
-    webapp: "https://trello-clone-pink-eta.vercel.app/",
-  },
+
   {
     id: 2,
     title: "Chatify",
@@ -221,5 +235,25 @@ export const projects = [
     github:
       "https://github.com/ayushtiwari77/Chatify-Public/tree/main/Chatify-main",
     webapp: "https://chatify-88jzh.sevalla.app/",
+  },
+  {
+    id: 3,
+    title: "Gourmet-Food App",
+    description:
+      "A fullstack food application created using Nextjs , Typescript and to store data NeonDb a highly efficient sql database is used.Using Zustand as state management tool",
+    image: gourmetlogo,
+    tags: [
+      "NextJs",
+      "Typescript",
+      "Prisma",
+      "Zustand",
+      "ShadCn",
+      "Imagekit",
+      "NeonDB",
+      "Clerk",
+      "PostgeSQL",
+    ],
+    github: "https://github.com/ayushtiwari77/Gourmet.git",
+    webapp: "https://gourmet-black.vercel.app/",
   },
 ];
