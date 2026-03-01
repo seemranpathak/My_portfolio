@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState, useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
-//import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -12,10 +11,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_njtejre",
-        "template_pkxfn2s",
+        "service_fmwsvwp",
+        "template_7b3s0av",
         form.current,
-        "ll6u0_Hh5kXtTR3bN"
+        "geFHZuGZkW-Rh5Lh1"
       )
       .then(
         () => {
@@ -62,7 +61,7 @@ const Contact = () => {
           questions!
         </p>
       </div>
-
+   
       {/* contact form */}
       <div className="mt-8 w-full max-w-md bg-[#0d081f] p-6 rounded-lg shadow-lg border border-gray-700">
         <h3 className="text-xl font-semibold text-white text-center">

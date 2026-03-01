@@ -47,9 +47,9 @@ const Navbar = () => {
 
         <div className="text-lg font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
-          <span className="text-white">Ayush</span>
+          <span className="text-white">Seemran</span>
           <span className="text-[#8245ec]">/</span>
-          <span className="text-white">Tiwari</span>
+          <span className="text-white">Pathak</span>
           <span className="text-[#8245ec]">&gt;</span>
         </div>
 
@@ -72,7 +72,7 @@ const Navbar = () => {
         {/* Social media icons */}
         <div className="hidden md:flex space-x-4">
           <a
-            href="https://github.com/ayushtiwari77/"
+            href="https://github.com/seemranpathak/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
@@ -80,7 +80,7 @@ const Navbar = () => {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://www.linkedin.com/in/ayush-tiwari-102b142a3/"
+            href="https://www.linkedin.com/in/seemran-pathak-224462238/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
