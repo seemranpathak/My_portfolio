@@ -42,7 +42,7 @@ import webrtclogo from "./assets/tech_logo/webrtc.png";
 // Experience Section Logo's
 import etechlogo from "./assets/company_logo/etechlogo.jpeg";
 import freelancelogo from "./assets/company_logo/freelancelogo.png";
-
+import bharatlogo from "./assets/company_logo/bharatlogo.png"
 // Education Section Logo's
 import choukseylogo from "./assets/education_logo/choukseylogo.jpeg";
 import cgbselogo from "./assets/education_logo/cgbse.webp";
@@ -51,7 +51,7 @@ import cgbselogo from "./assets/education_logo/cgbse.webp";
  import dinedashlogo from "./assets/work_logo/DineDash.png";
  import Cinemate from "./assets/work_logo/Cinemate.png";
  import StackPulse from "./assets/work_logo/Stackpulse.jpg";
-
+ import DrawMeet from "./assets/work_logo/DrawMeet.png";
 
 export const SkillsInfo = [
   {
@@ -151,7 +151,7 @@ export const experiences = [
     img: etechlogo,
     role: "Web Developer Intern",
     company: "E-tech",
-    date: "July 2024 -  Dec 2024",
+    date: "July 2024 -  Jan 2025",
     desc: "Web developer internship at Etech , where i had amazing mentors that guide me on implementing theory concepts to practical projects . I learned react in dept along with several packages in the react library and how to use them , which then helped me to create responsive and catchy Uis.",
     skills: [
       "ReactJS",
@@ -161,6 +161,22 @@ export const experiences = [
       "HTML",
       "CSS",
       "MongoDb",
+    ],
+  },
+   {
+    id: 1,
+    img: bharatlogo,
+    role: "Web Developer Intern",
+    company: "Bharat Intern",
+    date: "Nov 2023 -  Apr 2024",
+    desc: "Completed a Web Development Virtual Internship at Bharat Intern, where I gained hands-on experience with HTML, CSS, and JavaScript while building responsive websites. During the internship, I learned key front-end development concepts such as the Virtual DOM and modern UI practices. The program helped me apply theoretical knowledge to practical projects and improve my ability to design responsive and user-friendly web interfaces.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind CSS",
+      "Virtual DOM",
+      "ResponsiveDesign",
     ],
   },
 ];
@@ -235,5 +251,14 @@ export const projects = [
       "https://github.com/seemranpathak/STACKPLUS",
     webapp: "https://stack-pulse.netlify.app/register/",
   },
-  
+  {
+    id: 3,
+    title: "DrawMeet - Real-Time Collaborative Whiteboard with Video Chat",
+    description: "DrawMeet is a real-time collaborative platform that allows multiple users to draw on a shared whiteboard while communicating through live video chat. It uses WebRTC for peer-to-peer video communication and Socket.IO for real-time synchronization of drawing data. The platform enables seamless collaboration for brainstorming, teaching, and remote teamwork with instant updates across connected users.",
+    image: DrawMeet,
+    tags: ["React", "TypeScript", "WebRTC", "Socket.IO", "Node.js", "Express", "Real-time Collaboration"],
+    github: "https://github.com/seemranpathak/DrawMeet",
+    webapp: ""
+  }
+
 ];
